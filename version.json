@@ -1,7 +1,7 @@
 {
-  "version": "0.11.2",
+  "version": "0.11.3",
   "changelog": [
-    "0.11.2 - The app now stops any leftover old instance still holding the local port before starting, so restarting after an update can no longer leave you with a blank/empty window."
+    "0.11.3 - Evolve tab: clearer stat labels (XP on hand / can evolve now / almost ready) with an explanation that the numbers count cats. After an update a 'Restart now' button appears that restarts the app by itself."
   ],
   "zip_url": "https://raw.githubusercontent.com/robinpotat/BattleCatsCompanion/main/BattleCatsCompanion.zip"
 }
