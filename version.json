@@ -1,0 +1,7 @@
+{
+  "version": "0.11.0",
+  "changelog": [
+    "0.11.0 - First published version. Global updater + update log, cat food display, rarity breakdown, Seed tracker tab (bc-seek), AI recommendation wording, BlueStacks check fix."
+  ],
+  "zip_url": "https://raw.githubusercontent.com/robinpotat/BattleCatsCompanion/main/BattleCatsCompanion.zip"
+}
