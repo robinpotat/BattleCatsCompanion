@@ -1,7 +1,7 @@
 {
-  "version": "0.11.3",
+  "version": "0.11.4",
   "changelog": [
-    "0.11.3 - Evolve tab: clearer stat labels (XP on hand / can evolve now / almost ready) with an explanation that the numbers count cats. After an update a 'Restart now' button appears that restarts the app by itself."
+    "0.11.4 - Restart is now fully reliable: the new instance retries binding the port and only opens its window once the app is confirmed running, so a blank/empty window can no longer appear after 'Restart now'."
   ],
   "zip_url": "https://raw.githubusercontent.com/robinpotat/BattleCatsCompanion/main/BattleCatsCompanion.zip"
 }
