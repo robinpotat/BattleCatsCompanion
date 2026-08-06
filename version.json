@@ -1,6 +1,7 @@
 {
-  "version": "0.11.5",
+  "version": "0.11.6",
   "changelog": [
+    "0.11.6 - New automatic seed tracking: roll in the gacha, close BlueStacks, hit Track seed. The app reads your seed straight from the save, pulls the live track from bc.godfat.org and shows what you'll roll next on every active banner (including Platinum and Legend capsules), then asks the AI for a concrete roll plan.",
     "0.11.5 - The app window now brings itself to the front on start so it can't hide behind a fullscreen browser and look blank. The Downloading / Restarting statuses now show animated dots."
   ],
   "zip_url": "https://raw.githubusercontent.com/robinpotat/BattleCatsCompanion/main/BattleCatsCompanion.zip"
