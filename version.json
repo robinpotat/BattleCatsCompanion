@@ -1,7 +1,7 @@
 {
-  "version": "0.11.4",
+  "version": "0.11.5",
   "changelog": [
-    "0.11.4 - Restart is now fully reliable: the new instance retries binding the port and only opens its window once the app is confirmed running, so a blank/empty window can no longer appear after 'Restart now'."
+    "0.11.5 - The app window now brings itself to the front on start so it can't hide behind a fullscreen browser and look blank. The Downloading / Restarting statuses now show animated dots."
   ],
   "zip_url": "https://raw.githubusercontent.com/robinpotat/BattleCatsCompanion/main/BattleCatsCompanion.zip"
 }
