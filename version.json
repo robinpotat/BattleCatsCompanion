@@ -1,6 +1,7 @@
 {
-  "version": "0.11.11",
+  "version": "0.11.12",
   "changelog": [
+    "0.11.12 - Fixed the seed tracker dropping banners: when a new gacha rotation starts on the same day the old one ends (like today's update), the new capsules were never fetched because the list was capped at 4. Now every live banner is shown and used by the AI plan.",
     "0.11.11 - The roster has a new filter dropdown: pick any ability (e.g. Crit 100%, Strong vs Red), immunity (e.g. Warp, Wave) or targeted trait (e.g. Red, Aku) to narrow the list to cats that have it. The header now shows the version the roster data actually is, and when the game updates a warning banner appears telling you to hit Detect - which now re-fetches the data for the new version automatically.",
     "0.11.10 - The seed tracker is now a true one-button flow: the separate 'Re-run plan' button is gone, so nothing can double-trigger the AI plan. The single 'Track seed + AI plan' button does everything, and pressing it again cancels any in-flight plan before re-tracking.",
     "0.11.9 - 'Track seed' now also runs the AI plan automatically, so the gacha plan appears right after the tracks instead of needing a second button press (the AI plan button is now a 'Re-run plan' option). The update log in the app now shows all releases including 0.11.6-0.11.8.",
