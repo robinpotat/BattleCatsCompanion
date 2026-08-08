@@ -1,6 +1,7 @@
 {
-  "version": "0.11.14",
+  "version": "0.11.15",
   "changelog": [
+    "0.11.15 - The seed tracker's Track A and Track B now show 11 rolls each (a full 11-pull), so the guaranteed 11-pull's 11th cat is on screen. Your NP amount is now displayed in three places: a stat card on the Detect tab, the header line, and the seed tracker's resource chips (read straight from the save on Detect / Track seed).",
     "0.11.14 - godfat can keep flagging a just-expired banner as the 'current' one for a few hours after a game update, which kept that old banner visible. Now a banner that ends today is dropped even when godfat still marks it selected: after an update you immediately see the new rotation (Komori / Summer / Mamoluga plus the permanent Platinum and Legend capsules), and the newest live banner is used as the current one for the AI plan.",
     "0.11.13 - Rotations now replace instead of stack: when a new gacha rotation starts, the old banners that end that day are skipped automatically so the new capsules take their place. The current banner stays through its final day and disappears on its own once godfat switches to the new current event.",
     "0.11.12 - Fixed the seed tracker dropping banners: when a new gacha rotation starts on the same day the old one ends (like today's update), the new capsules were never fetched because the list was capped at 4. Now every live banner is shown and used by the AI plan.",
