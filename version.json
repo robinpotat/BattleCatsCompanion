@@ -1,6 +1,7 @@
 {
-  "version": "0.11.20",
+  "version": "0.11.21",
   "changelog": [
+    "0.11.21 - Starting the app is more reliable: double-clicking while it's already running now brings the existing window forward instead of starting a second copy that force-killed the first (that fight is what made the app seem to 'not open' and caused console-flash spam until one copy stuck). The window is restored/brought to front if it was hidden or minimized, and the server now starts before the network refresh so a slow connection can't silently abort the launch.",
     "0.11.20 - Restarting after an update could open a black/blank window: the new instance only waited for *some* server to be on the port, so it could open its window while the old, about-to-die server was still answering (or in the gap while the new server was starting). It now waits until its own server answers HTTP before opening the window, and the old window is closed cleanly on restart instead of the process being killed abruptly - no more orphaned WebView2 processes either.",
     "0.11.19 - The Detect log is cleaner: when BlueStacks was force-closed the save still extracts fine, and it now shows a single calm one-line note instead of a scary wall of 7-Zip 'Headers Error' lines.",
     "0.11.18 - Fixes Detect aborting with 'pipeline aborted' right after auto-closing BlueStacks: force-closing BlueStacks leaves the disk image's guest filesystem needing journal recovery, which made 7-Zip report a 'Headers Error' and exit non-zero even though it extracted the save fine - Detect now treats that as a warning and carries on, and it deletes the previous extracted copy first so a leftover save can never be mistaken for a fresh one.",
