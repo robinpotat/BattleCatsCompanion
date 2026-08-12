@@ -1,6 +1,7 @@
 {
-  "version": "0.11.28",
+  "version": "0.11.29",
   "changelog": [
+    "0.11.29 - Seed tracking is tougher against bc.godfat.org being overloaded: when the server is flaky (it returns 502/500 or times out intermittently, not just all at once), the app now retries up to 6 times with backoff instead of 3, so a rough stretch usually still gets through and shows you the track.",
     "0.11.28 - Seed tracking now handles bc.godfat.org having a rough moment: it retries a fetch up to 3 times when the server is busy (502 / timeout), so a single hiccup no longer aborts the whole run - it shows 'retrying...' and carries on. If godfat is really down it says so clearly (it's a community server that often gets slow right after a game update) instead of dumping a scary error trace, and nothing is wrong with your save.",
     "0.11.27 - Ability names in the Roster are clean now: the numbers no longer look random. Each ability shows its name with the value explained beside it - Barrier Break (100%) means it always breaks barriers, Barrier Break (30%) means 30% per hit, Crit (8%) is the crit chance, Freeze (30%, 2.0s) is chance and duration, Long Distance (170~470) is the attack range. The roster filter dropdown also lists one 'Barrier Break' instead of separate entries for each value, so filtering by ability now actually catches every cat that has it.",
     "0.11.26 - The update check now reads BOTH release mirrors and trusts whichever knows the newest version, so a single slow CDN edge can never hold 'Check for updates' behind by minutes (jsDelivr and raw.githubusercontent can each lag a release at different times - this takes the newest answer). The updater still verifies the downloaded zip really contains the version it promised before installing.",
