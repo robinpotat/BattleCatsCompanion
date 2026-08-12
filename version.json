@@ -1,6 +1,7 @@
 {
-  "version": "0.11.26",
+  "version": "0.11.27",
   "changelog": [
+    "0.11.27 - Ability names in the Roster are clean now: the numbers no longer look random. Each ability shows its name with the value explained beside it - Barrier Break (100%) means it always breaks barriers, Barrier Break (30%) means 30% per hit, Crit (8%) is the crit chance, Freeze (30%, 2.0s) is chance and duration, Long Distance (170~470) is the attack range. The roster filter dropdown also lists one 'Barrier Break' instead of separate entries for each value, so filtering by ability now actually catches every cat that has it.",
     "0.11.26 - The update check now reads BOTH release mirrors and trusts whichever knows the newest version, so a single slow CDN edge can never hold 'Check for updates' behind by minutes (jsDelivr and raw.githubusercontent can each lag a release at different times - this takes the newest answer). The updater still verifies the downloaded zip really contains the version it promised before installing.",
     "0.11.25 - The update check now reads the release manifest from a mirror that refreshes instantly when a release is published (jsDelivr), with the old server as a backup - so 'Check for updates' can't lag behind a fresh release for minutes anymore. The updater also verifies the downloaded zip really contains the version it promised before installing, and refuses to install if a mirror handed over an older copy.",
     "0.11.24 - Update checks now always get the fresh release info: the check adds a timestamp to the request so GitHub's cache can never serve a stale version.json for a minute or two after a release (that lag is what made the update button show the old version right after publishing).",
