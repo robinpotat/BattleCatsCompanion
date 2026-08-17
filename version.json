@@ -1,6 +1,7 @@
 {
-  "version": "0.11.37",
+  "version": "0.11.38",
   "changelog": [
+    "0.11.38 - opencode chat sessions now get deleted right after the AI answers, so the app stops silently filling up your disk with leftover chats. On the first launch after updating, all old sessions from the app are cleaned up too.",
     "0.11.37 - Two loadout fixes. First, cannons that are still being built (like a Thunderbolt you started developing) are no longer shown as usable in a loadout - only a fully developed cannon counts, so the AI won't suggest Iron Wall while it's still under construction. Second, the AI's reasoning no longer mentions cats you don't own: if the roster is missing a good counter, it says so in words instead of name-dropping a Manic cat or Legend Rare you've never pulled.",
     "0.11.36 - The barrier fix now works the way it actually plays: Starry Aliens (the sparkly cosmic ones) usually have a barrier, but normal Aliens often don't. The AI is now told to look up each enemy's description in the stage info and judge its barrier/shield/wave from what that description says, instead of guessing from the Alien trait or a 'Cyclone'-style name.",
     "0.11.35 - Stopped the AI making up enemy abilities. It used to claim that 'Alien' enemies (and anything with 'Cyclone' in its name) have barriers as a rule, so a loadout for Super Cosmic Cyclone said it has a barrier when it doesn't. Both the loadout and the 'can I beat it' check are now told: only say an enemy has a barrier/shield/wave/surge/warp if the stage page actually names it - never guess it from a trait or a name.",
