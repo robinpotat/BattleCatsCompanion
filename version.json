@@ -1,7 +1,7 @@
 {
-  "version": "0.11.44",
+  "version": "0.11.45",
   "changelog": [
-    "0.11.44 - Detect goes back to the original save extraction method (closing BlueStacks then reading the disk image with 7-Zip) but now waits for file locks to release before extracting, retries up to 3 times, and shows the real error details if something goes wrong. No more ADB or background service killing needed.",
+    "0.11.45 - Enemy names in the loadout 'Why' section are now clickable links that jump to the enemy's detail page. The AI's occasional server hiccups are now handled more gracefully.",
     "0.11.43 - Detect error logging fix. The actual error details from the extraction step were being swallowed and only showing 'pipeline aborted'. Now the log shows the real ADB error so you can see exactly what went wrong.",
     "0.11.41 - Detect now also closes the BlueStacks background services (BlueStacksServices.exe) that keep the disk image locked even after BlueStacks itself is closed. That was the reason detect kept failing with 'pipeline aborted' - the save couldn't be extracted while those services held the lock.",
     "0.11.36 - The barrier fix now works the way it actually plays: Starry Aliens (the sparkly cosmic ones) usually have a barrier, but normal Aliens often don't. The AI is now told to look up each enemy's description in the stage info and judge its barrier/shield/wave from what that description says, instead of guessing from the Alien trait or a 'Cyclone'-style name.",
