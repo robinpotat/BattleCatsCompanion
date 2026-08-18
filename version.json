@@ -1,8 +1,8 @@
 {
-  "version": "0.11.43",
+  "version": "0.11.44",
   "changelog": [
+    "0.11.44 - Detect goes back to the original save extraction method (closing BlueStacks then reading the disk image with 7-Zip) but now waits for file locks to release before extracting, retries up to 3 times, and shows the real error details if something goes wrong. No more ADB or background service killing needed.",
     "0.11.43 - Detect error logging fix. The actual error details from the extraction step were being swallowed and only showing 'pipeline aborted'. Now the log shows the real ADB error so you can see exactly what went wrong.",
-    "0.11.42 - Detect now works with BlueStacks running. Instead of trying to extract the save file from the disk image (which never actually worked because 7-Zip can't read the ext4 filesystem inside the virtual disk), it now pulls the save directly via ADB while BlueStacks is open. Make sure Battle Cats is running in BlueStacks before clicking Detect.",
     "0.11.41 - Detect now also closes the BlueStacks background services (BlueStacksServices.exe) that keep the disk image locked even after BlueStacks itself is closed. That was the reason detect kept failing with 'pipeline aborted' - the save couldn't be extracted while those services held the lock.",
     "0.11.36 - The barrier fix now works the way it actually plays: Starry Aliens (the sparkly cosmic ones) usually have a barrier, but normal Aliens often don't. The AI is now told to look up each enemy's description in the stage info and judge its barrier/shield/wave from what that description says, instead of guessing from the Alien trait or a 'Cyclone'-style name.",
     "0.11.35 - Stopped the AI making up enemy abilities. It used to claim that 'Alien' enemies (and anything with 'Cyclone' in its name) have barriers as a rule, so a loadout for Super Cosmic Cyclone said it has a barrier when it doesn't. Both the loadout and the 'can I beat it' check are now told: only say an enemy has a barrier/shield/wave/surge/warp if the stage page actually names it - never guess it from a trait or a name.",
