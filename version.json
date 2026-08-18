@@ -1,7 +1,7 @@
 {
-  "version": "0.11.48",
+  "version": "0.11.49",
   "changelog": [
-    "0.11.48 - Loadout AI fixes: the 'Can I beat it?' verdict now shows in its own box above the loadout instead of being jammed into the same section. The AI prompt now forces Big Pickle to list the enemy traits in the stage BEFORE picking cats, so it can't give you anti-Metal cats for a stage with no Metal enemies or anti-Black cats for a stage with no Black enemies. Reasoning that mentions cats you don't own is now cleaned up automatically. If the AI still picks a cat that counters a trait not in the stage, you'll see a warning under the loadout. Also fixed a file race condition where the beat check and loadout were writing to the same temp files at the same time.",
+    "0.11.49 - The AI now sees each cat's Respawn time (cooldown) in the roster, so it can pick proper meatshields. Previously it only saw Cost and TBA, so it sometimes picked expensive slow-recharge cats as 'meatshields'. The prompt also now explains that a good meatshield has low cost AND low respawn (under 5s), and that the cheapest cat isn't always the best wall.",
     "0.11.46 - Fixed enemy name linking in loadout 'Why' section. Previously, shorter enemy names like 'Bore' would corrupt the HTML of already-linked longer names like 'Nimoy Bore', causing garbled text in the search bar. Now uses a placeholder system that prevents cross-matching.",
     "0.11.43 - Detect error logging fix. The actual error details from the extraction step were being swallowed and only showing 'pipeline aborted'. Now the log shows the real ADB error so you can see exactly what went wrong.",
     "0.11.41 - Detect now also closes the BlueStacks background services (BlueStacksServices.exe) that keep the disk image locked even after BlueStacks itself is closed. That was the reason detect kept failing with 'pipeline aborted' - the save couldn't be extracted while those services held the lock.",
