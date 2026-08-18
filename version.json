@@ -1,6 +1,7 @@
 {
-  "version": "0.11.42",
+  "version": "0.11.43",
   "changelog": [
+    "0.11.43 - Detect error logging fix. The actual error details from the extraction step were being swallowed and only showing 'pipeline aborted'. Now the log shows the real ADB error so you can see exactly what went wrong.",
     "0.11.42 - Detect now works with BlueStacks running. Instead of trying to extract the save file from the disk image (which never actually worked because 7-Zip can't read the ext4 filesystem inside the virtual disk), it now pulls the save directly via ADB while BlueStacks is open. Make sure Battle Cats is running in BlueStacks before clicking Detect.",
     "0.11.41 - Detect now also closes the BlueStacks background services (BlueStacksServices.exe) that keep the disk image locked even after BlueStacks itself is closed. That was the reason detect kept failing with 'pipeline aborted' - the save couldn't be extracted while those services held the lock.",
     "0.11.36 - The barrier fix now works the way it actually plays: Starry Aliens (the sparkly cosmic ones) usually have a barrier, but normal Aliens often don't. The AI is now told to look up each enemy's description in the stage info and judge its barrier/shield/wave from what that description says, instead of guessing from the Alien trait or a 'Cyclone'-style name.",
