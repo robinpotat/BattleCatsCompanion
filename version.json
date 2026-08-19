@@ -1,7 +1,7 @@
 {
-  "version": "0.11.52",
+  "version": "0.11.53",
   "changelog": [
-    "0.11.52 - Metal Macho Cat knowledge corrected. It's not an anti-Metal attacker — it's a Metal-trait meatshield that takes only 1 damage from every non-crit hit, making it essentially immortal against non-crit enemies. The AI now knows to use it as a defensive tank, not a crit-based Metal counter.",
+    "0.11.53 - Two important fixes: (1) AI now sees which trait each ability targets in the roster (e.g. 'Freeze 40% vs Alien' instead of just 'Freeze 40%'). This stops the AI from guessing wrong — e.g. saying Seafarer freezes Angels when it actually freezes Aliens. Re-detect to get the updated roster. (2) Form change display fixed: when you unlock a new form but haven't switched to it yet, it now says 'Form X unlocked' instead of showing the same name twice.",
     "0.11.46 - Fixed enemy name linking in loadout 'Why' section. Previously, shorter enemy names like 'Bore' would corrupt the HTML of already-linked longer names like 'Nimoy Bore', causing garbled text in the search bar. Now uses a placeholder system that prevents cross-matching.",
     "0.11.43 - Detect error logging fix. The actual error details from the extraction step were being swallowed and only showing 'pipeline aborted'. Now the log shows the real ADB error so you can see exactly what went wrong.",
     "0.11.41 - Detect now also closes the BlueStacks background services (BlueStacksServices.exe) that keep the disk image locked even after BlueStacks itself is closed. That was the reason detect kept failing with 'pipeline aborted' - the save couldn't be extracted while those services held the lock.",
