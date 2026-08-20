@@ -1,6 +1,7 @@
 {
-  "version": "0.11.56",
+  "version": "0.11.57",
   "changelog": [
+    "0.11.57 - Wrong-trait counter replacement now picks a cat that actually counters a trait in the stage, not just the highest-DPS cat overall. If your loadout has an anti-Metal cat but the stage has Red/Angel enemies, the replacement will be an anti-Red or anti-Angel cat (sorted by DPS among trait-matching cats) instead of a random high-DPS unit.",
     "0.11.56 - Anti-Metal (and other wrong-trait) cats are now auto-swapped if the stage has no matching enemies. If the AI picks a crit unit for a stage with no Metal enemies, it gets replaced with the player's strongest general DPS cat. High-DPS area cats are kept even if they counter a wrong trait.",
     "0.11.46 - Fixed enemy name linking in loadout 'Why' section. Previously, shorter enemy names like 'Bore' would corrupt the HTML of already-linked longer names like 'Nimoy Bore', causing garbled text in the search bar. Now uses a placeholder system that prevents cross-matching.",
     "0.11.43 - Detect error logging fix. The actual error details from the extraction step were being swallowed and only showing 'pipeline aborted'. Now the log shows the real ADB error so you can see exactly what went wrong.",
