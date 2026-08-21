@@ -1,6 +1,7 @@
 {
-  "version": "0.12.00",
+  "version": "0.12.01",
   "changelog": [
+    "0.12.01 - Fixed title bar minimize/maximize/close buttons: they now call Flask endpoints directly (via fetch) instead of the unreliable pywebview.js_api bridge. Title bar buttons are now orange to match the AI button theme.",
     "0.12.00 - UI overhaul: (1) Custom frameless title bar with orange/black theme, window controls (minimize/maximize/close). (2) Combos in the loadout result are now clickable chips — click one to highlight the cats it includes with a glow effect. (3) 'Tell the AI what went wrong' textarea now has a Send button so you can trigger regeneration with your feedback. (4) Update log is now an accordion — each version collapses into a clickable header showing the version number, expand to see what changed. (5) Power-ups chip now has a green border when present. (6) All new elements have entrance animations.",
     "0.11.61 - The AI now knows it can switch cat forms when building loadouts. Each cat in the roster shows which forms are unlocked (e.g. 'forms: Base,Evolved,True'), and the AI prompt explains that True forms are usually stronger and should be preferred when available. The AI can recommend any unlocked form - the app uses whichever form it picks.",
     "0.11.60 - AI calls now retry up to 4 extra times (5 total) with exponential backoff (5s, 10s, 20s, 40s) instead of 2 flat retries. When big-pickle drops a request entirely (0 tokens, server-side), the app now detects it specifically and logs 'server dropped request' so you know it wasn't a bad reply. This dramatically improves reliability when the server is flaky.",
