@@ -1,6 +1,7 @@
 {
-  "version": "0.12.02",
+  "version": "0.12.03",
   "changelog": [
+    "0.12.03 - Update Log is now a header button (📋 next to 'Detect save') that opens a fullscreen overlay with the version accordion. Removed the old inline update log from the Detect tab.",
     "0.12.02 - Fixed a brief PowerShell window flashing during app restart/update: all subprocess calls (netstat, powershell process check, taskkill) and the restart Popen now use STARTF_USESHOWWINDOW to suppress console windows.",
     "0.12.01 - Fixed title bar minimize/maximize/close buttons: they now call Flask endpoints directly (via fetch) instead of the unreliable pywebview.js_api bridge. Title bar buttons are now orange to match the AI button theme.",
     "0.12.00 - UI overhaul: (1) Custom frameless title bar with orange/black theme, window controls (minimize/maximize/close). (2) Combos in the loadout result are now clickable chips — click one to highlight the cats it includes with a glow effect. (3) 'Tell the AI what went wrong' textarea now has a Send button so you can trigger regeneration with your feedback. (4) Update log is now an accordion — each version collapses into a clickable header showing the version number, expand to see what changed. (5) Power-ups chip now has a green border when present. (6) All new elements have entrance animations.",
