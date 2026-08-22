@@ -1,6 +1,7 @@
 {
-  "version": "0.12.05",
+  "version": "0.12.06",
   "changelog": [
+    "0.12.06 - Fixed update log accordion regex to match the actual `===== timestamp updated to v0.12.xx =====` format (timestamp has spaces so \\S+ didn't work).",
     "0.12.05 - Update log now keeps only the 10 most recent entries. Old entries are automatically trimmed when a new update is installed. The existing log was trimmed from 74 to 10 entries.",
     "0.12.04 - Fixed the update log accordion: it now correctly parses the `===== version description =====` format from update_log.txt. Entries are listed newest-first.",
     "0.12.03 - Update Log is now a header button (📋 next to 'Detect save') that opens a fullscreen overlay with the version accordion. Removed the old inline update log from the Detect tab.",
