@@ -1,6 +1,7 @@
 {
-  "version": "0.12.09",
+  "version": "0.12.10",
   "changelog": [
+    "0.12.10 - Tabs no longer stick when scrolling (title bar + header still do).",
     "0.12.09 - Fixed fullscreen button breaking after compact mode toggle. Title bar, header, and tabs are now sticky so they stay visible when scrolling.",
     "0.12.08 - Title bar buttons redesigned: minus button now toggles compact mode (420x320 window), square button toggles fullscreen (maximized). Tooltips updated.",
     "0.12.07 - Loadout now injects verified enemy traits (from wiki cache) into the AI prompt so it no longer guesses traits from enemy names. Power-ups chip now always shows (even 'none') so you can see the feature is working.",
