@@ -1,6 +1,7 @@
 {
-  "version": "0.12.07",
+  "version": "0.12.08",
   "changelog": [
+    "0.12.08 - Title bar buttons redesigned: minus button now toggles compact mode (420x320 window), square button toggles fullscreen (maximized). Tooltips updated.",
     "0.12.07 - Loadout now injects verified enemy traits (from wiki cache) into the AI prompt so it no longer guesses traits from enemy names. Power-ups chip now always shows (even 'none') so you can see the feature is working.",
     "0.12.06 - Fixed update log accordion regex to match the actual `===== timestamp updated to v0.12.xx =====` format (timestamp has spaces so \\S+ didn't work).",
     "0.12.05 - Update log now keeps only the 10 most recent entries. Old entries are automatically trimmed when a new update is installed. The existing log was trimmed from 74 to 10 entries.",
